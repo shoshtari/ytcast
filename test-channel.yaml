@@ -1,0 +1,25 @@
+# Test configuration for ytcast
+# Using a smaller educational channel for quick testing
+channels:
+  - name: "Fireship"
+    url: "https://www.youtube.com/@Fireship"
+    
+server:
+  host: "0.0.0.0"
+  port: 8080
+  base_url: "http://localhost:8080"
+
+polling:
+  interval: 5m
+
+storage:
+  audio_dir: "./test_audio"
+  feed_dir: "./test_feeds"
+  
+podcast:
+  title: "YouTube to Podcast"
+  description: "Audio from YouTube channels converted to podcast format"
+  author: "Test User"
+  email: "test@example.com"
+  language: "en-US"
+  category: "Technology"

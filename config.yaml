@@ -1,0 +1,25 @@
+# ytcast configuration
+# Replace the channel URL with a real YouTube channel you want to monitor
+channels:
+  - name: "Example Channel"
+    url: "https://www.youtube.com/@channelusername"
+    
+server:
+  host: "0.0.0.0"
+  port: 8080
+  base_url: "http://localhost:8080"
+
+polling:
+  interval: 30m  # Check for new videos every 30 minutes
+
+storage:
+  audio_dir: "./audio"
+  feed_dir: "./feeds"
+  
+podcast:
+  title: "YouTube to Podcast"
+  description: "Audio from YouTube channels converted to podcast format"
+  author: "Your Name"
+  email: "your@email.com"
+  language: "en-US"
+  category: "Technology"
